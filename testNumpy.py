@@ -16,11 +16,11 @@ print("Array numpy " + str(np.array(height)))
 print("BMI: " + str(bmi))
 print("BMI superior a 26: " + str(bmi[bmi > 26]))
 
-a = np.arange(15).reshape(3, 5)  # reshape se explica mas abajo
-print("Array numpy de 3 dimensiones" + str(a))
+a = np.arange(15).reshape(3, 5)  # crea la array con 3 dimensiones de 5 elementos cada uno
+print("Array numpy de 2 dimensiones" + str(a))
 np.array([[0,  1,  2,  3,  4], [5,  6,  7,  8,  9], [10, 11, 12, 13, 14]])
 
-print("Shape: " + str(a.shape) + ", ndim: " + str(a.ndim))
+print("ndim: " + str(a.ndim) + ", shape: " + str(a.shape) + ", size: " + str(a.size) + ", dtype: "
+      + str(a.dtype) + ", itemsize: " + str(a.itemsize))
 
-print(np.array([[0, 4,1,2], [0, 4,2,2], [0, 4,6,6], [0, 4,5,3], [0, 4,2,2], [0, 4],1,2, [0, 4,1,5]]).ndim)
-#por que no dice que es de más de 2 dimensiones!!?
+
