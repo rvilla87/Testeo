@@ -1,0 +1,13 @@
+'/aaaaa/qwsqw/qwsqws/Qws/file1.origenOK' '/qwd/qwd/qwdqwd/dqwd/file.destinoOK'
+'/bbbbb/wwed/oriNOK' '/wedwed/wedewd/DestiNOK
+'/ccccccc/wwed/oriNOK' /wedwed/wedewd/DestiNOK'
+'/dddddd/wwed/oriNOK '/wedwed/wedewd/DestiNOK'
+/eeeee/wwed/oriNOK' '/wedwed/wedewd/DestiNOK'
+
+'/tttttt/qwsqw/qwsqws/Qws/file1.origenOK' '/qwd/qwd/qwdqwd/dqwd/file.destinoOK'
+
+/ffff/wedwd/oriNOK /wekfwe/destiNOK
+
+'' NOK ''
+'' '/oepe/elNOK'
+'/zzzzz/qwsqw/qwsqws/Qws/file1.origenOK' '/qwd/qwd/qwdqwd/dqwd/file.destinoOK'
