@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import speech_recognition as sr
+import secret
 
 # obtain path to "english.wav" in the same folder as this script
 from os import path
@@ -49,7 +50,7 @@ GOOGLE_CLOUD_SPEECH_CREDENTIALS = r"""INSERT THE CONTENTS OF THE GOOGLE CLOUD SP
 print("\nEmpezando Wit.ai:")
 # Error: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto
 # recognize speech using Wit.ai
-WIT_AI_KEY = "HYCHCDC7TMCF4OPUEI4GRWZUIRFC4ECL"  # Wit.ai keys are 32-character uppercase alphanumeric strings
+WIT_AI_KEY = secret.WIT_AI_KEY  # Wit.ai keys are 32-character uppercase alphanumeric strings
 try:
     print("Wit.ai thinks you said " + r.recognize_wit(audio, key=WIT_AI_KEY))
 except sr.UnknownValueError:
