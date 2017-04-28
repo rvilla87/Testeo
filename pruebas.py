@@ -1,15 +1,17 @@
-import googlemaps
-import secret
-from datetime import datetime
+import matplotlib.pyplot as plt
+import matplotlib as mpl
 
-gmaps = googlemaps.Client(key=secret.GMAPS_KEY)
 
-# Geocoding an address
-geocode_result = gmaps.geocode('1600 Amphitheatre Parkway, Mountain View, CA')
 
-# Look up an address with reverse geocoding
-#reverse_geocode_result = gmaps.reverse_geocode((40.714224, -73.961452))
-
-# Request directions via public transit
-#now = datetime.now()
-#directions_result = gmaps.directions("Sydney Town Hall","Parramatta, NSW",mode="transit",departure_time=now)
+fig = plt.figure(figsize=(3, 2))
+ax1 = fig.add_axes([0.1, 0.5, 0.8, 0.2])
+cmap = mpl.colors.ListedColormap(['green', 'red'])
+# If a ListedColormap is used, the length of the bounds array must be one greater
+# than the length of the color list.  The bounds must be monotonically increasing.
+bounds = [0, 3, 3, 5]
+cb2 = mpl.colorbar.ColorbarBase(ax1, cmap=cmap, boundaries=bounds,
+                                spacing='proportional',  # TODO: fix this warning:
+                                                         #RuntimeWarning: divide by zero encountered in double_scalars
+                                orientation='horizontal')
+cb2.set_label('label')
+plt.show()
