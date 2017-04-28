@@ -23,7 +23,7 @@ sys.exit()
 #sys.exit()
 # else
 
-
+dd
 
 # aqui peta porque clen es 0:
 clen = y[-2] - y[1]
