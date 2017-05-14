@@ -2,7 +2,7 @@ import sys
 import string
 import operator
 
-f = open("ttexto.txt", "r")
+f = open("files/text.txt", "r")
 
 minimCaracteres = 3
 occurPalabras = {}
