@@ -1,4 +1,5 @@
 import time, subprocess
+from datetime import datetime
 from rtstock.stock import Stock
 from moneywagon import get_current_price
 
@@ -7,6 +8,7 @@ def telegram_alert(message):
     # telegram-send app must be in PATH and first run with --configure-channel
     # More info in https://github.com/rahiel/telegram-send
     subprocess.call('telegram-send --config trader.conf "' + message + '"', shell=True)
+    print(message)
 
 
 # Define custom stock market alerts
@@ -31,6 +33,9 @@ zec_high = 275
 
 print("Monitoring stock market and cryptocurrency rates...")
 while True:
+    # Print actual timestamp
+    print(datetime.now().strftime("%d/%m/%y %H:%M:%S"))
+
     # Get actual stock market prices
     TSLA = float(Stock('TSLA').get_latest_price()[0]["LastTradePriceOnly"])  # Tesla
     MSFT = float(Stock('MSFT').get_latest_price()[0]["LastTradePriceOnly"])  # Microsoft
