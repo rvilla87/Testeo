@@ -1,0 +1,1 @@
+python spark-structured-streaming-wordCount.py localhost 9999
